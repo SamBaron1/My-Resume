@@ -1,0 +1,677 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge"> <!-- Fixed "IE-edge" to "IE=edge" -->
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Samuel Waweru | Portfolio</title> <!-- More descriptive title -->
+   <link rel="stylesheet" href="styles.css">
+   <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+   <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script> <!-- Proper typed.js CDN -->
+</head>
+<body>
+    <header class="navbar">
+        <div class="navbar-container">
+            <!-- Logo with slogan -->
+            <div class="logo-container">
+                <a href="#home" class="logo">
+                    <span class="logo-name">Samuel Waweru</span>
+                    <span class="logo-slogan">Full Stack Developer</span>
+                </a>
+            </div>
+    
+            <!-- Mobile menu toggle -->
+            <input type="checkbox" id="menu-toggle" class="menu-toggle" />
+            <label for="menu-toggle" class="hamburger">
+                <div class="hamburger-line"></div>
+                <div class="hamburger-line"></div>
+                <div class="hamburger-line"></div>
+            </label>
+    
+            <!-- Navigation links -->
+            <nav class="nav-menu">
+                <ul class="nav-list">
+                    <li class="nav-item">
+                        <a href="#home" class="nav-link active" aria-current="page">
+                            <span class="link-text">Home</span>
+                            <span class="link-underline"></span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#about" class="nav-link">
+                            <span class="link-text">About</span>
+                            <span class="link-underline"></span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#skills" class="nav-link">
+                            <span class="link-text">Skills</span>
+                            <span class="link-underline"></span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#portfolio" class="nav-link">
+                            <span class="link-text">Portfolio</span>
+                            <span class="link-underline"></span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#contact" class="nav-link">
+                            <span class="link-text">Contact</span>
+                            <span class="link-underline"></span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+    <section class="hero" id="home">
+        <div class="hero-container">
+            <div class="hero-content">
+                <div class="hero-intro">
+                    <h4 class="hero-greeting">Hello, I'm</h4>
+                    <h1 class="hero-title">Samuel <span>Waweru</span></h1>
+                    <div class="hero-subtitle">
+                        <h3>And I'm a</h3>
+                        <div class="typewriter">
+                            <span id="typed-text"></span>
+                            <span class="cursor">|</span>
+                        </div>
+                    </div>
+                </div>
+    
+                <p class="hero-description">
+                    With over three years of experience, I specialize in building dynamic, responsive websites, 
+                    managing network infrastructures, and crafting impactful graphic designs. Passionate about 
+                    creating seamless user experiences and efficient systems.
+                </p>
+    
+                <div class="hero-cta">
+                    <a href="#about" class="btn-primary">
+                        <span>Explore My Work</span>
+                        <i class='bx bx-chevron-right'></i>
+                    </a>
+                    <a href="#contact" class="btn-secondary">
+                        <span>Let's Connect</span>
+                        <i class='bx bx-message-dots'></i>
+                    </a>
+                </div>
+    
+                <div class="hero-social">
+                    <a href="https://www.linkedin.com/in/samuel-nganga" target="_blank" aria-label="LinkedIn" class="social-link">
+                        <i class='bx bxl-linkedin'></i>
+                    </a>
+                    <a href="https://github.com/SamBaron1" target="_blank aria-label="GitHub" class="social-link">
+                        <i class='bx bxl-github'></i>
+                    </a>
+                    <a href="https://wa.me/254748374257" target="_blank" aria-label="WhatsApp" class="social-link">
+                        <i class='bx bxl-whatsapp'></i>
+                    </a>
+                    <a href="https://www.facebook.com/profile.php?id=100089642661854" target="_blank"class="social-link">
+                        <i class='bx bxl-facebook'></i>
+                    </a>
+                </div>
+            </div>
+    
+            <div class="hero-image">
+                <div class="image-wrapper">
+                    <img src="images/waweru.jpeg" alt="Samuel Waweru - Web Developer" class="profile-image" />
+                    <div class="image-border"></div>
+                    <div class="image-overlay"></div>
+                </div>
+                <div class="image-badge">
+                    <span>3+ Years Experience</span>
+                </div>
+            </div>
+        </div>
+    
+        <div class="scroll-indicator">
+            <span class="scroll-text">Scroll Down</span>
+            <div class="scroll-line"></div>
+        </div>
+    </section>
+
+    <section class="bio-section" id="about">
+        <div class="bio-header">
+            <h2>About <span>Me</span></h2>
+            <p>Discover my professional journey and expertise</p>
+        </div>
+      
+        <div class="bio-container">
+            <div class="bio-photo">
+                <div class="photo-frame">
+                    <img src="images/waweru1.jpeg" alt="Samuel Waweru - Web Developer & Network Administrator" class="photo-img">
+                    <div class="photo-border"></div>
+                    <div class="badge-experience">
+                        <span>3+ Years Experience</span>
+                    </div>
+                </div>
+            </div>
+      
+            <div class="bio-details">
+                <div class="bio-tabs">
+                    <button class="tab-toggle active" data-tab="web-role">
+                        <i class='bx bx-code-alt'></i>
+                        <span>Web Developer</span>
+                    </button>
+                    <button class="tab-toggle" data-tab="network-role">
+                        <i class='bx bx-network-chart'></i>
+                        <span>Network Admin</span>
+                    </button>
+                    <button class="tab-toggle" data-tab="design-role">
+                        <i class='bx bx-palette'></i>
+                        <span>Graphic Designer</span>
+                    </button>
+                </div>
+      
+                <div class="tab-panel active" id="web-role">
+                    <p>I am a passionate and highly skilled Web Developer with over 3 years of experience in building responsive, user-friendly websites and applications. My expertise spans both front-end and back-end development, with a focus on creating efficient, scalable solutions.</p>
+                    <ul class="bio-skillset">
+                        <li><i class='bx bxs-check-circle'></i> Full-stack web development</li>
+                        <li><i class='bx bxs-check-circle'></i> Responsive & mobile-first design</li>
+                        <li><i class='bx bxs-check-circle'></i> Performance optimization</li>
+                        <li><i class='bx bxs-check-circle'></i> Modern frameworks (React, Node.js)</li>
+                    </ul>
+                </div>
+      
+                <div class="tab-panel" id="network-role">
+                    <p>With a solid background in Network Administration, I have managed and optimized network infrastructures for businesses of various sizes, ensuring secure, reliable, and high-performance connectivity solutions.</p>
+                    <ul class="bio-skillset">
+                        <li><i class='bx bxs-check-circle'></i> Network configuration & maintenance</li>
+                        <li><i class='bx bxs-check-circle'></i> Security protocols implementation</li>
+                        <li><i class='bx bxs-check-circle'></i> Troubleshooting & system upgrades</li>
+                        <li><i class='bx bxs-check-circle'></i> Enterprise-level infrastructure</li>
+                    </ul>
+                </div>
+      
+                <div class="tab-panel" id="design-role">
+                    <p>As a Creative Graphics Designer, I bring innovative and visually engaging designs to life, specializing in brand identity, marketing materials, and user interfaces that deliver memorable experiences.</p>
+                    <ul class="bio-skillset">
+                        <li><i class='bx bxs-check-circle'></i> Brand identity & logo design</li>
+                        <li><i class='bx bxs-check-circle'></i> UI/UX design principles</li>
+                        <li><i class='bx bxs-check-circle'></i> Marketing material creation</li>
+                        <li><i class='bx bxs-check-circle'></i> Adobe Creative Suite mastery</li>
+                    </ul>
+                </div>
+      
+                <div class="bio-actions">
+                    <a href="#skills" class="btn-main">
+                        <span>View My Skills</span>
+                        <i class='bx bx-stats'></i>
+                    </a>
+                    <a href="#portfolio" class="btn-outline">
+                        <span>See My Work</span>
+                        <i class='bx bx-photo-album'></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+   
+    <section class="services-section" id="services">
+        <div class="section-header">
+            <h2>My <span>Services</span></h2>
+            <p>Professional solutions tailored to your needs</p>
+        </div>
+    
+        <div class="services-container">
+            <!-- Web Development Card -->
+            <div class="service-card">
+                <div class="service-icon">
+                    <i class="bx bx-code"></i>
+                    <div class="icon-bg"></div>
+                </div>
+                <h3>Web Design & Development</h3>
+                <p class="service-description">
+                    Custom, responsive websites built with modern technologies including HTML5, CSS3, 
+                    JavaScript (ES6+), React.js, and Node.js. Focused on performance, accessibility, 
+                    and seamless user experiences.
+                </p>
+                <ul class="service-features">
+                    <li><i class='bx bx-check'></i> Responsive & Mobile-First Design</li>
+                    <li><i class='bx bx-check'></i> Single Page Applications (SPA)</li>
+                    <li><i class='bx bx-check'></i> API Integration & Development</li>
+                    <li><i class='bx bx-check'></i> Performance Optimization</li>
+                </ul>
+                <a href="#portfolio" class="service-btn">
+                    <span>View Web Projects</span>
+                    <i class='bx bx-right-arrow-alt'></i>
+                </a>
+                <div class="service-hover-effect"></div>
+            </div>
+    
+            <!-- Graphic Design Card -->
+            <div class="service-card">
+                <div class="service-icon">
+                    <i class="bx bx-palette"></i>
+                    <div class="icon-bg"></div>
+                </div>
+                <h3>Graphic & UI/UX Design</h3>
+                <p class="service-description">
+                    Creative visual solutions including branding, marketing materials, and user interfaces. 
+                    Professional designs crafted in Adobe Creative Suite and Figma with a focus on 
+                    aesthetics and usability.
+                </p>
+                <ul class="service-features">
+                    <li><i class='bx bx-check'></i> Brand Identity & Logo Design</li>
+                    <li><i class='bx bx-check'></i> Print & Digital Marketing Materials</li>
+                    <li><i class='bx bx-check'></i> User Interface Prototyping</li>
+                    <li><i class='bx bx-check'></i> Design System Creation</li>
+                </ul>
+                <a href="#portfolio" class="service-btn">
+                    <span>View Design Portfolio</span>
+                    <i class='bx bx-right-arrow-alt'></i>
+                </a>
+                <div class="service-hover-effect"></div>
+            </div>
+    
+            <!-- Network Admin Card -->
+            <div class="service-card">
+                <div class="service-icon">
+                    <i class="bx bx-network-chart"></i>
+                    <div class="icon-bg"></div>
+                </div>
+                <h3>Network Administration</h3>
+                <p class="service-description">
+                    Comprehensive network solutions including infrastructure setup, security implementation, 
+                    and ongoing maintenance. Expertise in enterprise networking, security protocols, 
+                    and system optimization.
+                </p>
+                <ul class="service-features">
+                    <li><i class='bx bx-check'></i> Network Infrastructure Setup</li>
+                    <li><i class='bx bx-check'></i> Security & Firewall Configuration</li>
+                    <li><i class='bx bx-check'></i> Wireless Network Management</li>
+                    <li><i class='bx bx-check'></i> System Monitoring & Maintenance</li>
+                </ul>
+                <a href="#contact" class="service-btn">
+                    <span>Discuss Your Needs</span>
+                    <i class='bx bx-right-arrow-alt'></i>
+                </a>
+                <div class="service-hover-effect"></div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="skills-section" id="skills">
+        <div class="section-header">
+            <h2>My <span>Skills</span></h2>
+            <p>Technologies I work with and professional competencies</p>
+        </div>
+        
+        <div class="skills-container">
+            <!-- Technical Skills -->
+            <div class="skills-column">
+                <div class="skills-card">
+                    <h3 class="skills-title">
+                        <i class='bx bx-code-alt'></i>
+                        Technical Skills
+                    </h3>
+                    
+                    <div class="skills-list">
+                        <!-- HTML -->
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <div class="skill-icon" style="color: #e34f26;">
+                                    <i class="bx bxl-html5"></i>
+                                </div>
+                                <span class="skill-name">HTML5</span>
+                                <span class="skill-percent">70%</span>
+                            </div>
+                            <div class="skill-progress">
+                                <div class="progress-bar" style="width: 70%; background-color: #e34f26;"></div>
+                            </div>
+                        </div>
+                        
+                        <!-- CSS -->
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <div class="skill-icon" style="color: #264de4;">
+                                    <i class="bx bxl-css3"></i>
+                                </div>
+                                <span class="skill-name">CSS3</span>
+                                <span class="skill-percent">65%</span>
+                            </div>
+                            <div class="skill-progress">
+                                <div class="progress-bar" style="width: 65%; background-color: #264de4;"></div>
+                            </div>
+                        </div>
+                        
+                        <!-- JavaScript -->
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <div class="skill-icon" style="color: #f7df1e;">
+                                    <i class="bx bxl-javascript"></i>
+                                </div>
+                                <span class="skill-name">JavaScript</span>
+                                <span class="skill-percent">70%</span>
+                            </div>
+                            <div class="skill-progress">
+                                <div class="progress-bar" style="width: 70%; background-color: #f7df1e;"></div>
+                            </div>
+                        </div>
+                        
+                        <!-- React -->
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <div class="skill-icon" style="color: #61dafb;">
+                                    <i class="bx bxl-react"></i>
+                                </div>
+                                <span class="skill-name">React</span>
+                                <span class="skill-percent">60%</span>
+                            </div>
+                            <div class="skill-progress">
+                                <div class="progress-bar" style="width: 60%; background-color: #61dafb;"></div>
+                            </div>
+                        </div>
+                        
+                        <!-- Node.js -->
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <div class="skill-icon" style="color: #68a063;">
+                                    <i class="bx bxl-nodejs"></i>
+                                </div>
+                                <span class="skill-name">Node.js</span>
+                                <span class="skill-percent">70%</span>
+                            </div>
+                            <div class="skill-progress">
+                                <div class="progress-bar" style="width: 70%; background-color: #68a063;"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Professional Skills -->
+            <div class="skills-column">
+                <div class="skills-card">
+                    <h3 class="skills-title">
+                        <i class='bx bx-user-voice'></i>
+                        Professional Skills
+                    </h3>
+                    
+                    <div class="radial-skills">
+                        <!-- Creativity -->
+                        <div class="radial-skill">
+                            <div class="radial-progress" style="--progress:90; --color:#00e0ff;">
+                                <span class="radial-percent">90%</span>
+                            </div>
+                            <span class="radial-label">Creativity</span>
+                        </div>
+                        
+                        <!-- Communication -->
+                        <div class="radial-skill">
+                            <div class="radial-progress" style="--progress:65; --color:#00e0ff;">
+                                <span class="radial-percent">65%</span>
+                            </div>
+                            <span class="radial-label">Communication</span>
+                        </div>
+                        
+                        <!-- Problem Solving -->
+                        <div class="radial-skill">
+                            <div class="radial-progress" style="--progress:75; --color:#00e0ff;">
+                                <span class="radial-percent">75%</span>
+                            </div>
+                            <span class="radial-label">Problem Solving</span>
+                        </div>
+                        
+                        <!-- Teamwork -->
+                        <div class="radial-skill">
+                            <div class="radial-progress" style="--progress:85; --color:#00e0ff;">
+                                <span class="radial-percent">85%</span>
+                            </div>
+                            <span class="radial-label">Teamwork</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+   
+   <section class="portfolio" id="portfolio">
+    <div class="main-text">
+        <h2>Latest <span>Projects</span></h2>
+        <div class="portfolio-content">
+            
+            <!-- Web Development -->
+            <div class="row">
+                <img src="images/hd6.jpg" alt="CasualConnect Project">
+                <div class="layer">
+                    <h5>CasualConnect Platform</h5>
+                    <p>Web-based job management and user engagement system with secure authentication.</p>
+                    <a href="#" aria-label="View CasualConnect Project"><i class='bx bx-link-external'></i></a>
+                </div>
+            </div>
+
+            <!-- Graphic Design -->
+            <div class="row">
+                <img src="images/hd7.jpg" alt="Graphic Design">
+                <div class="layer">
+                    <h5>Creative Posters</h5>
+                    <p>Custom Photoshop designs for branding and social media campaigns.</p>
+                    <a href="#" aria-label="View Graphic Design Projects"><i class='bx bx-link-external'></i></a>
+                </div>
+            </div>
+
+            <!-- Networking -->
+            <div class="row">
+                <img src="images/hacker3.jpeg" alt="Network Infrastructure">
+                <div class="layer">
+                    <h5>Network Security Setup</h5>
+                    <p>Secure enterprise-level networking solutions.</p>
+                    <a href="#" aria-label="View Network Project"><i class='bx bx-link-external'></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Project Showcase Slider -->
+    <div class="showcase-container">
+        <h3>Project Showcase</h3>
+        <div class="showcase-slider">
+            <div class="slider-track">
+                <div class="slide">
+                    <img src="images/agribusiness.jpg" alt="Agribusiness Project">
+                    <div class="slide-caption">Agribusiness Solution</div>
+                </div>
+                <div class="slide">
+                    <img src="images/animal farm.jpg" alt="Animal Farm Project">
+                    <div class="slide-caption">Livestock Management</div>
+                </div>
+                <div class="slide">
+                    <img src="images/BestFarming.jpg" alt="Farming Project">
+                    <div class="slide-caption">Agricultural Innovation</div>
+                </div>
+                <div class="slide">
+                    <img src="images/BSconference.jpg" alt="Conference Project">
+                    <div class="slide-caption">Business Conference</div>
+                </div>
+                <div class="slide">
+                    <img src="images/Resume1.jpg" alt="Persona Resume">
+                    <div class="slide-caption">Digital Presence</div>
+                </div>
+                <div class="slide">
+                    <img src="images/Cisco.jpeg" alt="Cisco Project">
+                    <div class="slide-caption">Digital Presence</div>
+                </div>
+                <div class="slide">
+                    <img src="images/CCNA.jpeg" alt="Cisco Project">
+                    <div class="slide-caption">Digital Presence</div>
+                </div>
+                <div class="slide">
+                    <img src="images/DP WAWERU.jpg" alt="Political Project">
+                    <div class="slide-caption">Digital Presence</div>
+                </div>
+                <div class="slide">
+                    <img src="images/MP WAWERU.jpg" alt="Political Project">
+                    <div class="slide-caption">Media Production</div>
+                </div>
+                <div class="slide">
+                    <img src="images/mp.jpeg" alt="Political Project">
+                    <div class="slide-caption">Marketing Campaign</div>
+                </div>
+                <!-- Duplicate slides for infinite loop -->
+                <div class="slide">
+                    <img src="images/agribusiness.jpg" alt="Agribusiness Project">
+                    <div class="slide-caption">Agribusiness Solution</div>
+                </div>
+                <div class="slide">
+                    <img src="images/animal farm.jpg" alt="Animal Farm Project">
+                    <div class="slide-caption">Livestock Management</div>
+                </div>
+            </div>
+        </div>
+        <div class="slider-controls">
+            <button class="slider-prev" aria-label="Previous slide"><i class='bx bx-chevron-left'></i></button>
+            <button class="slider-next" aria-label="Next slide"><i class='bx bx-chevron-right'></i></button>
+        </div>
+    </div>
+</section>
+<section class="contact" id="contact">
+    <div class="section-header">
+        <h2>Contact <span>Me</span></h2>
+        <p>Let's collaborate on your next project</p>
+    </div>
+
+    <div class="contact-container">
+        <div class="contact-info">
+            <div class="contact-intro">
+                <h3>Let's Build Something Great Together</h3>
+                <p>
+                    Have a project in mind, need a website, graphic solution, or network setup? 
+                    I'm always open to discussing new ideas, creative opportunities, or partnerships. 
+                    Let's turn your vision into a powerful digital experience.
+                </p>
+            </div>
+
+            <div class="contact-details">
+                <ul class="contact-list">
+                    <li>
+                        <i class="bx bxs-envelope"></i>
+                        <div>
+                            <h4>Email</h4>
+                            <a href="mailto:Samuelng0001@gmail.com">Samuelng0001@gmail.com</a>
+                        </div>
+                    </li>
+                    <li>
+                        <i class="bx bxs-phone"></i>
+                        <div>
+                            <h4>Phone</h4>
+                            <a href="tel:+254748374257">+254 748 374 257</a>
+                        </div>
+                    </li>
+                </ul>
+
+                <div class="contact-social">
+                    <h4>Connect With Me</h4>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/profile.php?id=100089642661854" target="_blank"class="social-link">
+                            <i class='bx bxl-facebook'></i>
+                        </a>
+                        <a href="https://twitter.com/@samueln77172301" target="_blank" aria-label="Twitter" class="social-link">
+                            <i class='bx bxl-twitter'></i>
+                        </a>
+                        
+                        <a href="https://instagram.com/sam_nganga8" target="_blank" aria-label="Instagram" class="social-link">
+                            <i class='bx bxl-instagram'></i>
+                        </a>
+                        
+                        <a href="https://wa.me/254748374257" target="_blank" aria-label="WhatsApp" class="social-link">
+                            <i class='bx bxl-whatsapp'></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/samuel-nganga" target="_blank" aria-label="LinkedIn" class="social-link">
+                            <i class='bx bxl-linkedin'></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="contact-form">
+            <form id="contactForm" action="#" method="POST">
+                <div class="form-group">
+                    <input type="text" name="name" id="name" required>
+                    <label for="name">Your Name</label>
+                    <span class="underline"></span>
+                </div>
+                
+                <div class="form-group">
+                    <input type="email" name="email" id="email" required>
+                    <label for="email">Your Email</label>
+                    <span class="underline"></span>
+                </div>
+                
+                <div class="form-group">
+                    <input type="text" name="subject" id="subject">
+                    <label for="subject">Subject</label>
+                    <span class="underline"></span>
+                </div>
+                
+                <div class="form-group textarea-group">
+                    <textarea name="message" id="message" rows="5" required></textarea>
+                    <label for="message">Your Message</label>
+                    <span class="underline"></span>
+                </div>
+                
+                <button type="submit" class="submit-btn">
+                    <span>Send Message</span>
+                    <i class="bx bx-paper-plane"></i>
+                </button>
+            </form>
+        </div>
+    </div>
+</section>
+<footer class="site-footer">
+    <div class="footer-container">
+        <div class="footer-content">
+            <div class="footer-brand">
+                <h3>Samuel Waweru</h3>
+                <p>Web Developer & Cybersecurity Specialist</p>
+            </div>
+            
+            <div class="footer-links">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-social">
+                <h4>Connect With Me</h4>
+                <div class="social-links">
+                    <a href="https://www.facebook.com/profile.php?id=100089642661854" target="_blank"class="social-link">
+                        <i class='bx bxl-facebook'></i>
+                        <a href="https://twitter.com/@samueln77172301" target="_blank" aria-label="Twitter" class="social-link">
+                            <i class='bx bxl-twitter'></i>
+                        </a>
+                        
+                    <a href="https://wa.me/254748374257" target="_blank" aria-label="WhatsApp" class="social-link">
+                        <i class='bx bxl-whatsapp'></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/samuel-nganga" target="_blank" aria-label="LinkedIn" class="social-link">
+                        <i class='bx bxl-linkedin'></i>
+                    <a href="https://github.com/SamBaron1" target="_blank" aria-label="GitHub" class="social-link">
+                        <i class='bx bxl-github'></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>Developed with passion by <strong>Samuel Waweru</strong> &copy; <span id="current-year"></span></p>
+        </div>
+    </div>
+</footer>
+
+<a href="#" class="back-to-top" aria-label="Back to top">
+    <i class="bx bx-up-arrow-alt"></i>
+</a>
+
+   <script src="main.js"></script>
+
+</body>
+</html>
