@@ -151,6 +151,8 @@ body {
     
     .hamburger {
         display: flex;
+        z-index: 1001; /* Ensure it's above everything */
+        position: relative; /* Needed for z-index to work */
     }
     
     .nav-menu {
@@ -440,8 +442,8 @@ body {
 
 .image-border {
     position: absolute;
-    top: -10px;
-    left: -10px;
+    top: -8px;
+    right: -5px;
     width: 100%;
     height: 100%;
     border: 4px solid #007bff;
@@ -450,7 +452,9 @@ body {
     pointer-events: none;
     opacity: 0.5;
     transition: all 0.5s ease;
+    transform: translate(20px, 0); /* move 20px to the right */
 }
+
 
 .image-overlay {
     position: absolute;

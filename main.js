@@ -1,32 +1,32 @@
 document.addEventListener('DOMContentLoaded', function() {
-    // Navbar functionality
     const navbar = document.querySelector('.navbar');
     const menuToggle = document.getElementById('menu-toggle');
     const navLinks = document.querySelectorAll('.nav-link');
-    
-    // Add scroll effect to navbar
+    const navMenu = document.querySelector('.nav-menu');
+
+    // Navbar scroll effect
     window.addEventListener('scroll', function() {
-        if (window.scrollY > 50) {
-            navbar.classList.add('scrolled');
-        } else {
-            navbar.classList.remove('scrolled');
-        }
+        navbar.classList.toggle('scrolled', window.scrollY > 50);
     });
-    
-    // Close mobile menu when clicking a link
+
+    // Close mobile menu when clicking a link (for mobile screens)
     navLinks.forEach(link => {
         link.addEventListener('click', function() {
             if (window.innerWidth <= 768) {
-                menuToggle.checked = false;
-                document.querySelector('.nav-menu').style.right = '-100%';
-                const lines = document.querySelectorAll('.hamburger-line');
-                lines[0].style.transform = 'none';
-                lines[1].style.opacity = '1';
-                lines[2].style.transform = 'none';
+                menuToggle.checked = false; // This should trigger CSS changes automatically
             }
         });
     });
-    
+
+    // Optional: Reset menu if window is resized to desktop
+    window.addEventListener('resize', function() {
+        if (window.innerWidth > 768) {
+            menuToggle.checked = false;
+        }
+    });
+
+
+
     // Highlight active section in navbar
     const sections = document.querySelectorAll('section');
     window.addEventListener('scroll', function() {
