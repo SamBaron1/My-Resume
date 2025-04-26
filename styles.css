@@ -441,7 +441,7 @@ body {
 }
 
 .image-border {
-    position: absolute;
+    position: relative;
     top: -8px;
     right: -5px;
     width: 100%;
